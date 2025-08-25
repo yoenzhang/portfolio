@@ -19,33 +19,43 @@ const Navbar = () => {
     }
   }, [toggle]);
 
-  const renderNavLinks = (isSecondary) => (
-    <ul className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex'} flex-row gap-6`}>
-      {navLinks.map((link) => (
-        <li
-          key={link.id}
-          className={`${
-            active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
-          } hover:text-white text-[20px] font-medium cursor-pointer`}
-          onClick={() => {
-            setActive(link.title);
-            if (isSecondary) {
-              setToggle(false);
-            }
-          }}
-        >
-          <a href={`#${link.id}`}>{link.title}</a>
+  const renderNavLinks = (isSecondary) => {
+    const baseColor = isSecondary ? 'text-secondary' : 'text-white';
+    const linksExceptContact = navLinks.filter((l) => l.id !== 'contact');
+    const contactLink = navLinks.find((l) => l.id === 'contact');
+
+    return (
+      <ul className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex'} flex-row gap-6`}>
+        {linksExceptContact.map((link) => (
+          <li
+            key={link.id}
+            className={`${active === link.title ? 'text-white' : baseColor} hover:text-white text-[20px] font-medium cursor-pointer`}
+            onClick={() => {
+              setActive(link.title);
+              if (isSecondary) setToggle(false);
+            }}
+          >
+            <a href={`#${link.id}`}>{link.title}</a>
+          </li>
+        ))}
+        <li className={`${baseColor} hover:text-white text-[20px] font-medium cursor-pointer`}>
+          <button onClick={toggleResume}>Resume</button>
         </li>
-      ))}
-      <li
-        className={`text-${
-          isSecondary ? 'secondary' : 'white'
-        } hover:text-white text-[20px] font-medium cursor-pointer`}
-      >
-        <button onClick={toggleResume}>Resume</button>
-      </li>
-    </ul>
-  );
+        {contactLink && (
+          <li
+            key={contactLink.id}
+            className={`${active === contactLink.title ? 'text-white' : baseColor} hover:text-white text-[20px] font-medium cursor-pointer`}
+            onClick={() => {
+              setActive(contactLink.title);
+              if (isSecondary) setToggle(false);
+            }}
+          >
+            <a href={`#${contactLink.id}`}>{contactLink.title}</a>
+          </li>
+        )}
+      </ul>
+    );
+  };
 
   return (
     <>

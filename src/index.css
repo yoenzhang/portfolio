@@ -26,15 +26,15 @@
 }
 
 .violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: #0F5ABE;
+  background: linear-gradient(-90deg, #0F5ABE 0%, rgba(15, 90, 190, 0) 100%);
+  background: -webkit-linear-gradient(-90deg, #0F5ABE 0%, rgba(15, 90, 190, 0) 100%);
 }
 
 .green-pink-gradient {
   background: #00cea8;
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #0F5ABE 97.5%);
+  background: -webkit-linear-gradient(90.13deg, #00cea8 1.9%, #0F5ABE 97.5%);
 }
 
 .orange-text-gradient,
