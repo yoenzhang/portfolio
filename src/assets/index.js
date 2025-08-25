@@ -1,7 +1,9 @@
 // Import company logos
-import mathwork from "./company/mathwork.png";
-import edunet from "./company/edunet.png";
-import eduskill from "./company/eduskill.png";
+import theScore from "./company/theScore.png";
+import mozilla from "./company/mozilla.png";
+import mobials from "./company/mobials.png";
+import goodfood from "./company/goodfood.png";
+import traffic from "./company/traffic.png";
 
 // Import tech stack images
 import python from "./tech-stack/python.png";
@@ -21,11 +23,15 @@ import CompileVortex from "./projects/CompileVortex.png";
 import css from "./tech/css.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
+import javascript from "./tech-stack/javascript.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.png";
+
+// Tech-stack images for services
+import swift from "./tech-stack/swift.png";
+import typescript from "./tech-stack/typescript.png";
 
 // Import common assets
 import logo from "./logo.svg";
@@ -34,8 +40,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 export {
-  mathwork,
-  edunet,
   python,
   c,
   cpp,
@@ -58,5 +62,11 @@ export {
   logo,
   menu,
   close,
-  eduskill,
+  swift,
+  typescript,
+  theScore,
+  mozilla,
+  mobials,
+  goodfood,
+  traffic,
 };

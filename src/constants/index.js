@@ -10,16 +10,15 @@ import {
   tailwind,
   nodejs,
   git,
-  edunet,
-  weatherpedia,
-  termpw,
-  payloadmaster,
   threejs,
-  mhft,
-  sketcher,
-  mathwork,
-  CompileVortex,
-  eduskill,
+  logo,
+  swift,
+  typescript,
+  theScore,
+  mozilla,
+  mobials,
+  goodfood,
+  traffic,
 } from "../assets";
 
 export const navLinks = [
@@ -38,10 +37,10 @@ export const navLinks = [
 ];
 
 export const services = [
-  { title: "C", icon: c },
-  { title: "C++", icon: cpp },
+  { title: "JavaScript", icon: javascript },
+  { title: "Swift", icon: swift },
   { title: "Python", icon: python },
-  { title: "Java", icon: java },
+  { title: "TypeScript", icon: typescript },
 ];
 
 export const technologies = [
@@ -57,114 +56,98 @@ export const technologies = [
 
 export const experiences = [
   {
-    title: "AI/ML Intern",
-    company_name: "EduSkill Foundation | AWS Academy | AICTE",
-    icon: eduskill,
+    title: "Mobile Software Developer - iOS",
+    company_name: "ESPN Bet, theScore | Toronto, ON",
+    icon: theScore,
     iconBg: "#161329",
-    date: "Sep 2023 - Nov 2023",
+    date: "Jan 2024 - Aug 2024, May 2025 - Aug 2025",
     points: [
-      "Acquired hands-on knowledge of AWS Cloud Foundation, delving into cloud infrastructure, services, and deployment.",
-      "also gaining a solid foundation in Machine Learning, covering topics like algorithms, data analysis, and model building.",
+      "Completed 160+ tickets over 12 months; recognized as the top-performing intern company-wide over 1 year tenure",
+      "Led iOS development for \"Parlay Lounge\", \"BetVision LiveStream\" & \"MyBets 3.0\" using SwiftUI; launched 4 weeks ahead of schedule",
+      "Developed and shipped flagship UI features with Swift & UIKit, driving engagement across 2.5M+ monthly users",
+      "Refactored legacy components into modular, reusable SwiftUI packages enabling cross-team adoption and consistency",
     ],
   },
   {
-    title: "Mathwork Ai Virtual Intern",
-    company_name: "Mathwork | AICTE",
-    icon: mathwork,
+    title: "Data Pipeline Engineer – Undergraduate Research Assistant",
+    company_name: "TRAFFIC | Remote – London, UK",
+    icon: traffic,
     iconBg: "#161329",
-    date: "May 2023 - Sep 2023",
+    date: "May 2025 – Aug 2025",
     points: [
-      "Completed virtual internship, gaining a strong foundation in MATLAB, including data analysis and processing.",
-      "Acquired practical skills in image and signal processing, including segmentation, batch processing, and spectral analysis.",
-      "Developed expertise in machine learning models for clustering, classification, and regression, and customized deep learning techniques for image classification.",
+      "Designed and deployed an end-to-end Airflow pipeline to ingest, deduplicate, and classify ivory-trafficking news from six sources",
+      "Upgraded NLP extraction from GPT-3.5 to Gemini 2.5 Flash Pro with robust JSON parsing and fallbacks, reducing false positives by 70%",
+      "Built ML pipeline with TF-IDF and Random Forest achieving 99.9% accuracy, 100% precision, 99.7% recall on 6k+ examples",
+      "Developed resilient scraping and enrichment with Python, BeautifulSoup, and PostgreSQL with retries and idempotency",
     ],
   },
   {
-    title: "Artificial Intelligence Intern",
-    company_name: "Edunet Foundation | IBM SkillsBuild | AICTE",
-    icon: edunet,
+    title: "Frontend Developer",
+    company_name: "Mozilla | Toronto, ON",
+    icon: mozilla,
     iconBg: "#161329",
-    date: "June 2023 - July 2023",
+    date: "Sep 2022 – Dec 2022, May 2023 - Aug 2023",
     points: [
-      "Engineered a comprehensive Mental Health Fitness Tracker ML model utilizing Python and scikit-learn.",
-      "Maximized the model's performance by refining model parameters and employing ensemble methods, yielding an outstanding accuracy percentage of 98.50%.",
-      "Leveraged 12 regression algorithms to attain precise outcomes in analyzing and predicting mental fitness levels across 150+ countries.",
+      "Designed and managed A/B experiments enrolling 10,000–1,000,000+ users influencing Firefox features and strategy",
+      "Integrated backend telemetry with Glean SDK for cross-platform experiments",
+      "Built modular, reusable React components adopted across 5+ engineering teams",
+      "Upgraded an internal SCRUM tool and automated Looker population via Node.js, increasing ticket output by 200%",
+    ],
+  },
+  {
+    title: "Fullstack/Backend Developer",
+    company_name: "Mobials Inc | Toronto, ON",
+    icon: mobials,
+    iconBg: "#161329",
+    date: "Jan 2022 - Apr 2022",
+    points: [
+      "Enhanced AutoVerify’s API in PHP enabling 1,000+ business clients with real-time pre-approvals",
+      "Architected RESTful APIs for partner integrations consumed by automotive vendors",
+      "Optimized SQL queries by 50% and leveraged Postman for accurate API testing",
+      "Automated PHP unit tests and CI/CD pipelines; integrated New Relic/Sentry for observability",
+    ],
+  },
+  {
+    title: "Fullstack Developer",
+    company_name: "Goodfood Market Corp | Toronto, ON",
+    icon: goodfood,
+    iconBg: "#161329",
+    date: "May 2021 - Aug 2021",
+    points: [
+      "Built full-stack data anonymization with Laravel and a Vue.js interface for secure customer-data handling",
+      "Migrated and optimized 1.5M+ user records and 10M+ data points with MySQL",
+      "Developed an internal HR tool in React to streamline user management and report logs",
     ],
   },
 ];
 
 export const projects = [
   {
-    name: "WeatherPedia",
+    name: "Suggestify",
     description:
-      "Web-based platform that allows users to access weather information for their location by entering it in the search field",
+      "AI-powered music recommendation app using MFCC-based audio fingerprints and FAISS indexing to match user audio against 8,000+ songs. Flask backend with React Native front-end enables real-time identification and suggestions.",
     tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "HTML", color: "green-text-gradient" },
-      { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
-      { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "PyTorch", color: "green-text-gradient" },
+      { name: "React Native", color: "pink-text-gradient" },
+      { name: "Flask", color: "yellow-text-gradient" },
+      { name: "FAISS", color: "blue-text-gradient" },
+      { name: "MFCCs", color: "green-text-gradient" },
     ],
-    image: weatherpedia,
-    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
+    image: logo,
+    source_code_link: "https://github.com/yoenzhang/Suggestify",
   },
   {
-    name: "Terminal Like Portfolio Website",
+    name: "StatCheck",
     description:
-      "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
+      "iOS and web app integrating the balldontlie.io API to fetch real-time NBA statistics for players dating back to 1946.",
     tags: [
-      { name: "HTML", color: "blue-text-gradient" },
-      { name: "css", color: "green-text-gradient" },
-      { name: "Javascript", color: "pink-text-gradient" },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Swift", color: "green-text-gradient" },
+      { name: "React", color: "pink-text-gradient" },
+      { name: "NBA API", color: "yellow-text-gradient" },
     ],
-    image: termpw,
-    source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
-  },
-  {
-    name: "Mental Health Fitness Tracker",
-    description:
-      "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
-    tags: [
-      { name: "Machine Learning", color: "blue-text-gradient" },
-      { name: "Jupyter Notebook", color: "green-text-gradient" },
-      { name: "Regression Algorithms", color: "pink-text-gradient" },
-    ],
-    image: mhft,
-    source_code_link:
-      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
-  },
-  {
-    name: "PayloadMaster",
-    description:
-      "Tool to automate payload creation using the Metasploit framework",
-    tags: [
-      { name: "shell", color: "blue-text-gradient" },
-    ],
-    image: payloadmaster,
-    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
-  },
-  {
-    name: "CompileVortex",
-    description:
-      "Tool to automate payload creation using the Metasploit framework",
-    tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "CSS", color: "green-text-gradient" },
-      { name: "HTML", color: "pink-text-gradient" },
-    ],
-    image: CompileVortex,
-    source_code_link: "https://github.com/lohitkolluri/CompileVortex",
-  },
-  {
-    name: "Sketcher",
-    description:
-      "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
-    tags: [
-      { name: "OpenCV", color: "blue-text-gradient" },
-      { name: "Matplotlib", color: "green-text-gradient" },
-      { name: "Python", color: "pink-text-gradient" },
-    ],
-
-    image: sketcher,
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+    image: logo,
+    source_code_link: "https://github.com/yoenzhang/StatCheckWeb",
   },
 ];
